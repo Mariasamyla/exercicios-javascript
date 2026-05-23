@@ -9,9 +9,9 @@ const botao2 = document.getElementById('botao2');
 function toggleVisibility() {
   const element = document.getElementById("minha-linha");
   if (element.style.visibility === "hidden") {
-    element.style.visibility = "visible";
+    element.style.visibility = "visible";  // aparece o texto
   } else {
-    element.style.visibility = "hidden";
+    element.style.visibility = "hidden"; // some o texto
   }
 }
 
