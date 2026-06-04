@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Ex 3 - Questões</title>
+
   </head>
   <body>
-    <div>
-        <p id="minha-linha">Este é o texto original.</p>
-        <button id="botao">Clique para desaparecer com o Texto</button>
-        <button id="botao2">Clique para aparecer o Texto</button>
-        <button id="botao3">Clique para aparecer o Texto</button>
-        <button id="botao4">Clique para aparecer o Texto</button>
+     <div class="question">
+            Pergunta: Qual é a capital do Brasil?
+      
+        <div class="option" data-correct="false">A) Rio de Janeiro</div> 
+        <div class="option" data-correct="false">B) São Paulo</div>
+        <div class="option" data-correct="true">C) Brasília</div>
+        <div class="option" data-correct="false">D) Salvador</div>
         
+        <div class="feedback" id="feedback"></div>
+        <button onclick="resetQuiz()">Tentar Novamente</button>
     </div>
     
     

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Semáforo</title>
+    <style>
+        .luz {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 10px;
+        }
+        
+        .vermelho { background-color: gray; }
+        .amarelo { background-color: gray; }
+        .verde { background-color: gray; }
+    </style>
+</head>
+<body>
+    <div class="luz vermelho" id="v"></div>
+    <div class="luz amarelo" id="a"></div>
+    <div class="luz verde" id="vd"></div>
+    
+    <br>
+    <button onclick="acender('v', 'red')">Vermelho</button>
+    <button onclick="acender('a', 'yellow')">Amarelo</button>
+    <button onclick="acender('vd', 'green')">Verde</button>
+
+    <script>
+        function acender(id, cor) {
+            document.getElementById('v').style.backgroundColor = 'gray';
+            document.getElementById('a').style.backgroundColor = 'gray';
+            document.getElementById('vd').style.backgroundColor = 'gray';
+            
+            document.getElementById(id).style.backgroundColor = cor;
+        }
+    </script>
+</body>
+</html>

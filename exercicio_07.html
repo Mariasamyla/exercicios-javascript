@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabuada</title>
+</head>
+<body>
+    <h1>Tabuada</h1>
+    
+    <input type="number" id="num" placeholder="Digite um número">
+    <button onclick="tabuada()">Calcular</button>
+    
+    <div id="resultado"></div>
+
+    <script>
+        function tabuada() {
+            let n = Number(document.getElementById('num').value);
+            let resultado = '';
+            
+            for(let i = 1; i <= 10; i++) {
+                resultado += n + ' × ' + i + ' = ' + (n * i) + '<br>';
+            }
+            
+            document.getElementById('resultado').innerHTML = resultado;
+        }
+    </script>
+</body>
+</html>
